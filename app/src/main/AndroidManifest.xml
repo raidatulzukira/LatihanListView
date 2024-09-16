@@ -13,13 +13,13 @@
         android:theme="@style/Theme.LatihanListView"
         tools:targetApi="31">
         <activity
+            android:name=".RecycleBuahActivity"
+            android:exported="false" />
+        <activity
             android:name=".RecycleViewActivity"
             android:exported="false" />
         <activity
             android:name=".ListviewActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RecycleBuahActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

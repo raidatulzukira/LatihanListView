@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     private  lateinit var btnClick : Button
     private lateinit var btnListView : Button
     private lateinit var btnRecycleview : Button
+    private lateinit var btnRecycleBuah : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         btnClick = findViewById(R.id.btnClickHere)
         btnListView = findViewById(R.id.btnListView)
         btnRecycleview = findViewById(R.id.btnRecycleView)
+        btnRecycleBuah = findViewById(R.id.btnRecycleBuah)
 
         //untuk 1 screen --> terdiri dari 1 activity dan 1 xml layout
         //untuk bisa widget kita pakai, kita deklarasi dlu
@@ -52,6 +54,11 @@ class MainActivity : AppCompatActivity() {
             //intent expilicit : kita memanggil pihak ketiga / third party / libray : gmaps, gps,
             val intentMenu2 = Intent(this@MainActivity, RecycleViewActivity::class.java)
             startActivity(intentMenu2)
+        }
+
+        btnRecycleBuah.setOnClickListener() {
+            val intentMenu = Intent(this@MainActivity, RecycleBuahActivity::class.java)
+            startActivity(intentMenu)
         }
     }
 }

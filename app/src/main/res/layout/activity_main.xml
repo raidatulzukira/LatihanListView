@@ -28,30 +28,43 @@
 
         <Button
             android:id="@+id/btnClickHere"
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="60dp"
             android:layout_marginTop="50sp"
             android:backgroundTint="#F61C8D"
-            android:padding="20sp"
             android:text="Click Here!"
-            android:textAlignment="center"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
             android:textSize="16sp" />
 
         <Button
             android:id="@+id/btnListView"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#F61C8D"
-            android:text="Lisv View "
+            android:text="List View "
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="3sp"
             android:textSize="16sp" />
 
         <Button
             android:id="@+id/btnRecycleView"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
+            android:layout_marginTop="3sp"
             android:backgroundTint="#F61C8D"
             android:text="Recycle View"
             android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnRecycleBuah"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3sp"
+            android:backgroundTint="#F61C8D"
+            android:textSize="16sp"
+            android:text="Recycle buah" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
