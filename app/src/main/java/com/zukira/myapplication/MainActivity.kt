@@ -8,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.zukira.myapplication.model.ModelMovie
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,6 +16,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnListView : Button
     private lateinit var btnRecycleview : Button
     private lateinit var btnRecycleBuah : Button
+    private lateinit var btnMovie: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         btnListView = findViewById(R.id.btnListView)
         btnRecycleview = findViewById(R.id.btnRecycleView)
         btnRecycleBuah = findViewById(R.id.btnRecycleBuah)
+        btnMovie = findViewById(R.id.btnMovie)
 
         //untuk 1 screen --> terdiri dari 1 activity dan 1 xml layout
         //untuk bisa widget kita pakai, kita deklarasi dlu
@@ -58,6 +62,11 @@ class MainActivity : AppCompatActivity() {
 
         btnRecycleBuah.setOnClickListener() {
             val intentMenu = Intent(this@MainActivity, RecycleBuahActivity::class.java)
+            startActivity(intentMenu)
+        }
+
+        btnMovie.setOnClickListener() {
+            val intentMenu = Intent(this@MainActivity, RecycleMovieActivity::class.java)
             startActivity(intentMenu)
         }
     }

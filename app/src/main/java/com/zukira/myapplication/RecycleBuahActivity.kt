@@ -14,6 +14,7 @@ import com.zukira.myapplication.model.ModelBuah
 class RecycleBuahActivity : AppCompatActivity() {
 
     private lateinit var rv_buah : RecyclerView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -22,7 +23,7 @@ class RecycleBuahActivity : AppCompatActivity() {
         rv_buah = findViewById(R.id.rv_buah)
 
         rv_buah.layoutManager = GridLayoutManager(this, 1,)
-        val adapter = BuahAdapter(Mocklist.getModel() as ArrayList<ModelBuah>, this)
+        val adapter = BuahAdapter(Mocklist.getModel(this) as ArrayList<ModelBuah>, this)
         rv_buah.adapter = adapter
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
